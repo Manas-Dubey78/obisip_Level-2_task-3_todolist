@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+    <title>To-Do App</title>
+</head>
+<body>
+        
+    <div class="context">
+        <h1>To-Do List</h1>
+        <div class="Add-Task">
+            <input type="text" id="taskInput" class="task-input" placeholder="Enter a new task..." onkeypress="handleKeyPress(event)">
+            <button onclick="addTask()"><span>+</span></button>
+        </div>
+    
+        <div class="Pending-task">
+            <h2>Pending Tasks</h2>
+            <ul id="pendingTasks"></ul>
+        </div>
+    
+        <div class="Complete-Task">
+            <h2>Completed Tasks</h2>
+            <ul id="completedTasks"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
